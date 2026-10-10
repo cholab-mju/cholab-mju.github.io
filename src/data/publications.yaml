@@ -1,14 +1,14 @@
 # 논문 목록. num이 큰 순서(최신)로 표시됩니다. 새 논문은 num을 하나 올려 맨 위에 추가하세요.
 - num: 23
   title: Oleic Acid-Mediated Double Emulsification Enables Enhanced Aqueous Stability and Localized Photothermal Heating of Liquid Metal Droplets
-  authors: Eunju Na, Youngwon Kim, Jihye Kim, Sang Kug Chung, Yongmin Cho, Bongseop Kwak, Joohyung Lee
+  authors: Eunju Na, Youngwon Kim, Jihye Kim, Sang Kug Chung, Yongmin Cho†, Bongseop Kwak†, Joohyung Lee†
   venue: Small Methods
   year: 2026
   detail: 10(19), e71023
   url: https://doi.org/10.1002/smtd.71023
 - num: 22
   title: A Caenorhabditis elegans-based whole-organism microfluidic biosensing platform for detecting lung cancer cell-derived volatile organic compounds
-  authors: Nari Jang, Seung Hwan Lee, Yongmin Cho, Shin Sik Choi
+  authors: Nari Jang, Seung Hwan Lee, Yongmin Cho†, Shin Sik Choi†
   venue: Biotechnology and Bioprocess Engineering
   year: 2026
   detail: 31(5), 867-876
