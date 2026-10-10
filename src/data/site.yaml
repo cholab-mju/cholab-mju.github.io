@@ -1,0 +1,37 @@
+# 연구실 기본 정보. 헤더, 푸터, Contact 페이지에서 사용합니다.
+name: Intelligent BioMicrosystems Laboratory
+name_ko: 지능형 바이오 마이크로 시스템 연구실
+short: Cho Lab
+abbr: IBML
+university: Myongji University
+university_ko: 명지대학교
+department: Department of Chemical Engineering
+department_ko: 화학공학과
+email: yongmincho@mju.ac.kr
+tagline: We apply and develop various engineering techniques including microfluidics, computer vision, and machine learning, with a focus on neurobiology and aging research for quantitative system-level understanding.
+recruiting: 저희와 함께 성장하고 싶은 열정있는 학부생 및 대학원생 환영합니다!
+intro_doc: https://drive.google.com/file/d/1ZzOCpyUFOOGzbYuols0pGX85aWX6ViDL/view
+scholar: https://scholar.google.com/citations?user=sxX4h30AAAAJ&hl=en
+github: https://github.com/cholab-mju
+address:
+  en: 116 Myongji-ro, Cheoin-gu, Yongin, Gyeonggi-do, 17058, South Korea
+  ko: 17058 경기도 용인시 처인구 명지로 116
+office:
+  en: Room 318, Engineering Building 1, Myongji University
+  ko: 명지대학교 화학공학과 제1공학관 318호
+  tel: +82-31-330-6385
+lab:
+  en: Room 310, Engineering Building 1, Myongji University
+  ko: 명지대학교 화학공학과 제1공학관 310호
+nav:
+  - { label: Home, href: / }
+  - { label: Research, href: /research }
+  - label: Team
+    children:
+      - { label: Professor, href: /team/professor }
+      - { label: Lab Members, href: /team/lab-members }
+  - { label: Publications, href: /publications }
+  - { label: News, href: /news }
+  - { label: Gallery, href: /gallery }
+  - { label: Codes, href: /codes }
+  - { label: Contact, href: /contact }

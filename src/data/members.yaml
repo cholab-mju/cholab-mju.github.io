@@ -1,0 +1,146 @@
+# 연구실 구성원. 그룹 순서대로 사이트에 표시됩니다.
+# 사진은 public/images/members/ 아래에 넣고 경로를 photo에 적습니다 (없으면 null).
+groups:
+- title: Postdoctoral Researcher
+  members:
+  - name: Jongsun Kim
+    name_ko: 김종선
+    photo: /images/members/current/jongsun-kim.jpg
+    joined: 2026 June
+    details:
+    - B.S. Kangwon National University (Biology)
+    - M.S. Kangwon National University (Herpetology)
+    - Ph.D. Kangwon National University (Amphibian Disease)
+- title: Post-Master's Researcher
+  members:
+  - name: Jihye Kim
+    name_ko: 김지혜
+    photo: /images/members/current/jihye-kim.jpg
+    joined: 2024 Spring
+    details:
+    - B.S. Myongji University Chemical Engineering
+    - M.S. Myongji University Chemical Engineering
+  - name: Dohoon Kim
+    name_ko: 김도훈
+    photo: /images/members/current/dohoon-kim.jpg
+    joined: 2026 May
+    details:
+    - B.S. Seoul National University
+    - M.S. Gwangju Institute of Science & Technology
+    - M.S. Georgetown University
+- title: Graduate Students
+  members:
+  - name: Yebin Son
+    name_ko: 손예빈
+    photo: /images/members/current/yebin-son.jpg
+    joined: 2023 Summer
+    details:
+    - Chemical Engineering
+    - Myongji University
+  - name: Soojin Lee
+    name_ko: 이수진
+    photo: /images/members/current/soojin-lee.jpg
+    joined: 2024 January
+    details:
+    - Chemical Engineering
+    - Myongji University
+- title: Undergraduate Students
+  members:
+  - name: Yewon Seo
+    name_ko: 서예원
+    photo: /images/members/current/yewon-seo.jpg
+    joined: 2024 January
+    details:
+    - Chemical Engineering
+    - Myongji University
+  - name: Jian Kim
+    name_ko: 김지안
+    photo: /images/members/current/jian-kim.jpg
+    joined: 2026 June
+    details:
+    - System Life Science
+    - Myongji University
+  - name: Bomin Kim
+    name_ko: 김보민
+    photo: /images/members/current/bomin-kim.jpg
+    joined: 2025 December
+    details:
+    - Chemical Engineering
+    - Myongji University
+  - name: Youngjun Song
+    name_ko: 송영준
+    photo: /images/members/current/youngjun-song.jpg
+    joined: 2026 July
+    details:
+    - Chemical Engineering
+    - Myongji University
+  - name: Soobin Lee
+    name_ko: 이수빈
+    photo: /images/members/current/soobin-lee.jpg
+    joined: 2026 June
+    details:
+    - System Life Science
+    - Myongji University
+  - name: Jaebeen Lee
+    name_ko: 이재빈
+    photo: /images/members/current/jaebeen-lee.jpg
+    joined: 2026 June
+    details:
+    - System Life Science
+    - Myongji University
+alumni:
+- name: Soobin Nam
+  name_ko: 남수빈
+  photo: /images/members/alumni/soobin-nam.jpg
+  role: Undergraduate Student
+  year: 2023
+- name: Yewon Lee
+  name_ko: 이예원
+  photo: /images/members/alumni/yewon-lee.jpg
+  role: Undergraduate Student
+  year: 2024
+- name: Seojin Jung
+  name_ko: 정서진
+  photo: /images/members/alumni/seojin-jung.jpg
+  role: Undergraduate Student
+  year: 2026
+- name: Jiyeon Kang
+  name_ko: 강지연
+  photo: /images/members/alumni/jiyeon-kang.jpg
+  role: Undergraduate Student
+  year: 2023
+- name: Miseo Gu
+  name_ko: 구미서
+  photo: /images/members/alumni/miseo-gu.jpg
+  role: Undergraduate Student
+  year: 2025
+- name: Yunjeong Jun
+  name_ko: 전윤정
+  photo: /images/members/alumni/yunjeong-jun.jpg
+  role: Undergraduate Student
+  year: 2023
+- name: Dayoung Baek
+  name_ko: 백다영
+  photo: /images/members/alumni/dayoung-baek.jpg
+  role: Undergraduate Student
+  year: 2026
+- name: Hyeon Ji Won
+  name_ko: 현지원
+  photo: /images/members/alumni/hyeon-ji-won.jpg
+  role: Undergraduate Student
+  year: 2024
+- name: Seonghun Choi
+  name_ko: 최성훈
+  photo: /images/members/alumni/seonghun-choi.jpg
+  role: Undergraduate Student
+  year: 2026
+- name: Miseon Lee
+  name_ko: 이미선
+  photo: /images/members/alumni/miseon-lee.jpg
+  role: Undergraduate Student
+  year: 2024
+- name: Youngeun Kwon
+  name_ko: 권영은
+  photo: /images/members/alumni/youngeun-kwon.jpg
+  role: Graduate Student
+  year: 2026

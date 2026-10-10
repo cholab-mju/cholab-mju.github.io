@@ -1,0 +1,14 @@
+---
+interface Props { m: { name: string; name_ko?: string; photo?: string | null; joined?: string; details?: string[]; role?: string } }
+const { m } = Astro.props;
+---
+<div class="member">
+  <div class:list={['photo', { empty: !m.photo }]}>
+    {m.photo ? <img src={m.photo} alt={m.name} loading="lazy" width="400" height="400" /> : <span>👤</span>}
+  </div>
+  <p class="name">{m.name} {m.name_ko && <span>({m.name_ko})</span>}</p>
+  <p class="meta">
+    {m.joined && <>Joined {m.joined}<br /></>}
+    {m.details?.map((d, i) => <>{d}{i < m.details!.length - 1 && <br />}</>)}
+  </p>
+</div>

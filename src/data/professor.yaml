@@ -1,0 +1,29 @@
+# 교수 소개 페이지 데이터
+name: Yongmin Cho, Ph.D.
+name_ko: 조용민
+title: Assistant Professor
+photo: /images/professor/portrait.jpg
+email: yongmincho@mju.ac.kr
+tel: +82-31-330-6107
+scholar: https://scholar.google.com/citations?hl=en&user=sxX4h30AAAAJ&view_op=list_works
+experience:
+  - role: Assistant Professor
+    period: 2023 – present
+    where: Myongji University, Department of Chemical Engineering
+  - role: Postdoctoral Fellow
+    period: 2018 – 2023
+    where: Harvard Medical School, Department of Systems Biology, Kirschner Lab
+    url: https://kirschner.hms.harvard.edu/
+  - role: Postdoctoral Fellow
+    period: 2017 – 2018
+    where: Georgia Institute of Technology, Department of Chemical and Biomolecular Engineering, Lu Lab
+    url: https://www.lulab.gatech.edu/
+education:
+  - degree: Ph.D. in Chemical and Biomolecular Engineering
+    period: 2012 – 2017
+    where: Georgia Institute of Technology, Lu Lab
+    url: https://www.lulab.gatech.edu/
+  - degree: B.S. in Chemical & Biological Engineering
+    period: 2005 – 2012
+    where: Seoul National University
+    note: Military service in South Korea (2007 – 2009)

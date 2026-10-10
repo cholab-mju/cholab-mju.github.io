@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import pubs from '../data/publications.yaml';
+import site from '../data/site.yaml';
+const sorted = [...pubs].sort((a, b) => b.num - a.num);
+const years = [...new Set(sorted.map((p) => p.year))];
+---
+<Base title="Publications" description="Publications from the Intelligent BioMicrosystems Laboratory.">
+  <div class="container page">
+    <div class="page-head">
+      <h1>Publications</h1>
+      <p>You can see all our papers on <a href={site.scholar} target="_blank" rel="noopener">Google Scholar ↗</a>. † corresponding author, * equal contribution.</p>
+    </div>
+    {years.map((y) => (
+      <>
+        <h2 class="year-head">{y}</h2>
+        <ol class="pub-list">
+          {sorted.filter((p) => p.year === y).map((p) => (
+            <li class="pub">
+              <span class="num">{p.num}.</span>
+              <div>
+                <div class="title">{p.url ? <a href={p.url} target="_blank" rel="noopener">{p.title}</a> : p.title}</div>
+                <div class="authors">{p.authors}</div>
+                <div class="venue"><em>{p.venue}</em>, {p.year}{p.detail && `, ${p.detail}`}</div>
+                {p.note && <div class="note">★ {p.note}</div>}
+                {p.cover && <img class="cover" src={p.cover} alt={`${p.venue} cover`} loading="lazy" />}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </>
+    ))}
+  </div>
+</Base>

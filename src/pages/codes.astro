@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import codes from '../data/codes.yaml';
+---
+<Base title="Codes" description="Open-source code and datasets from the lab.">
+  <div class="container page">
+    <div class="page-head"><h1>Codes</h1><p>Open-source code and datasets</p></div>
+    <div class="grid cols-2">
+      {codes.map((c) => (
+        <div class="card"><div class="body">
+          <h3><a href={c.repo} target="_blank" rel="noopener">{c.title}</a></h3>
+          <p class="small muted">{c.description}</p>
+          <p style="margin:0"><a class="btn ghost" href={c.repo} target="_blank" rel="noopener">GitHub ↗</a>
+            {c.links?.map((l) => <> <a class="btn ghost" href={l.url} target="_blank" rel="noopener">{l.label} ↗</a></>)}</p>
+        </div></div>
+      ))}
+    </div>
+  </div>
+</Base>

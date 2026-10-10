@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.yaml';
+import prof from '../data/professor.yaml';
+const mapQ = encodeURIComponent('Myongji University Engineering Building 1, 116 Myongji-ro, Cheoin-gu, Yongin');
+---
+<Base title="Contact" description={`Contact the Intelligent BioMicrosystems Laboratory, ${site.university}.`}>
+  <div class="container page">
+    <div class="page-head"><h1>Contact</h1></div>
+    <div class="feature" style="align-items:start">
+      <div>
+        <h2>Prof. {prof.name.replace(', Ph.D.', '')} <span class="muted" style="font-weight:500">({prof.name_ko})</span></h2>
+        <p>{site.department}<br />{site.university}<br />
+          E-mail: <a href={`mailto:${site.email}`}>{site.email}</a><br />
+          Tel: {site.office.tel}</p>
+
+        <h3 style="margin-top:1.6em">Office</h3>
+        <p>{site.office.en}<br />{site.address.en}<br /><span class="muted">{site.office.ko}, {site.address.ko}</span></p>
+
+        <h3 style="margin-top:1.6em">Laboratory</h3>
+        <p>{site.lab.en}<br />{site.address.en}<br /><span class="muted">{site.lab.ko}, {site.address.ko}</span></p>
+      </div>
+      <div>
+        <img src="/images/contact/photo.jpg" alt="Myongji University" style="border-radius:10px;margin-bottom:12px" />
+        <iframe title="Map" width="100%" height="300" style="border:0;border-radius:10px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src={`https://www.google.com/maps?q=${mapQ}&output=embed`}></iframe>
+      </div>
+    </div>
+  </div>
+</Base>

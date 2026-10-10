@@ -1,0 +1,81 @@
+---
+import site from '../data/site.yaml';
+import '../styles/global.css';
+
+interface Props { title?: string; description?: string; }
+const { title, description = site.tagline } = Astro.props;
+const fullTitle = title ? `${title} · ${site.short}` : `${site.name} (${site.short})`;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL('/images/home/hero.jpg', Astro.site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <strong>Intelligent BioMicrosystems Lab</strong>
+          <span>{site.name_ko}</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+        <nav class="nav" id="primaryNav" aria-label="Primary">
+          {site.nav.map((item: any) => item.children ? (
+            <details>
+              <summary>{item.label} ▾</summary>
+              <div>
+                {item.children.map((c: any) => <a href={c.href} aria-current={isCurrent(c.href) ? 'page' : undefined}>{c.label}</a>)}
+              </div>
+            </details>
+          ) : (
+            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>{site.name}</strong> @ {site.university}<br />
+          {site.address.en}<br />
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </div>
+        <div>
+          <a href={site.scholar} target="_blank" rel="noopener">Google Scholar</a> ·
+          <a href={site.github} target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('navToggle');
+      const nav = document.getElementById('primaryNav');
+      btn?.addEventListener('click', () => {
+        const open = nav!.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      document.addEventListener('click', (e) => {
+        document.querySelectorAll('.nav details[open]').forEach((d) => {
+          if (!d.contains(e.target as Node)) d.removeAttribute('open');
+        });
+      });
+    </script>
+  </body>
+</html>

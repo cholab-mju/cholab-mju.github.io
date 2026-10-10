@@ -1,0 +1,12 @@
+# 공개 코드/데이터 목록
+- title: A computer vision algorithm for extracting quantitative phenotypes
+  description: A custom MATLAB script that extracts various behavioral and morphological features to track phenotypic changes during the aging process. Briefly, we performed background subtraction and image segmentation to identify and determine the location of live individuals.
+  repo: https://github.com/dydals320/DaphniaBehAnalysis
+  links:
+    - { label: Data set (Kaggle), url: "https://www.kaggle.com/competitions/daphniacounter" }
+    - { label: Reference paper, url: "https://onlinelibrary.wiley.com/doi/full/10.1111/acel.13571" }
+- title: Automated Imaging Platform GUI
+  description: MATLAB code for communicating with an Arduino board and a camera.
+  repo: https://github.com/dydals320/ImagingGUI
+  links:
+    - { label: Reference paper, url: "https://onlinelibrary.wiley.com/doi/full/10.1111/acel.13571" }

@@ -1,0 +1,18 @@
+---
+import { formatDate } from '../lib/format';
+interface Props { n: any; compact?: boolean }
+const { n, compact = false } = Astro.props;
+---
+<article class="news-item" id={`n-${n.date}-${n.title.slice(0, 12).replace(/\s+/g, '-')}`}>
+  <time datetime={n.date}>{formatDate(n.date)}</time>
+  <div>
+    <h3>{n.title}</h3>
+    {n.body?.map((p: string) => <p>{p}</p>)}
+    {n.links && <p class="links">{n.links.map((l: any) => <a href={l.url} target="_blank" rel="noopener">{l.label} ↗</a>)}</p>}
+    {!compact && n.photos && (
+      <div class="photos">
+        {n.photos.map((p: string) => <a href={p} target="_blank" rel="noopener"><img src={p} alt={n.title} loading="lazy" /></a>)}
+      </div>
+    )}
+  </div>
+</article>

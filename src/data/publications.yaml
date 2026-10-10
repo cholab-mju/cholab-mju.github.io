@@ -1,0 +1,151 @@
+# 논문 목록. num이 큰 순서(최신)로 표시됩니다. 새 논문은 num을 하나 올려 맨 위에 추가하세요.
+- num: 21
+  title: 'Light-On and Power-On: A Dual Mode Active De-/Anti-Icing System Using Liquid Metal-Based Photothermal and Electrothermal Pastes'
+  authors: Chimin Song, Soonchul Kwon, Jungmin Lee, Yongmin Cho, Joohyung Lee
+  venue: J. Mater. Chem. A
+  year: 2026
+  url: https://pubs.rsc.org/en/content/articlehtml/2026/ta/d5ta10376b
+  verify: Google Sites의 서지 정보가 19번과 동일하게 적혀 있었음. 권/호/페이지 확인 필요.
+- num: 20
+  title: Efficient cell lysis and PCR platform with induction heating for C. elegans gene analysis
+  authors: Seaan Hong, Jungyoon Uh, Minsu Kang, Taejin Kim, Youngeun Kwon, Yongmin Cho†, Hyun Ho Lee†
+  venue: Adv. Ind. Eng. Chem.
+  year: 2025
+  detail: 1(33)
+  url: https://link.springer.com/article/10.1007/s44405-025-00032-x
+- num: 19
+  title: Advanced Neural Functional Imaging in C. elegans Using Lab-on-a-Chip Technology
+  authors: Youngeun Kwon, Jihye Kim, Ye Bin Son , Sol Ah Lee, Shin Sik Choi, and Yongmin Cho
+  venue: Micromachines
+  year: 2024
+  detail: 15(8), 1027
+  url: https://www.mdpi.com/2072-666X/15/8/1027
+- num: 18
+  title: Pickering-type Phase Change Capsules for Skin-temperature-controllable Sunscreen Formulation
+  authors: Jiyoon Park, Yeongyeong Kim, Hyunji Lee, Chimin Song, Seongeun Kang, Yongmin Cho† , and Joohyung Lee†
+  venue: Polymer(Korea)
+  year: 2024
+  detail: 48, 282-288
+  url: http://journal.polymer-korea.or.kr/journal/download/pdf/4447
+- num: 17
+  title: Dynamic temperature control in microfluidics for in vivo imaging of cold-sensing in C. elegans
+  authors: Sol Ah Lee*, Yongmin Cho*, William R Schafer, Hang Lu (*Equal contribution)
+  venue: Biophysical Journal
+  year: 2024
+  detail: 123 (8), 947
+  url: https://www.cell.com/biophysj/abstract/S0006-3495%2824%2900172-3
+- num: 16
+  title: Trends in Single-Molecule Total Internal Reflection Fluorescence Imaging and Their Biological Applications with Lab-on-a-Chip Technology
+  authors: Louis Colson, Youngeun Kwon, Soobin Nam, Avinashi Bhandari, Nolberto Martinez Maya, Ying Lu, and Yongmin Cho
+  venue: Sensors
+  year: 2023
+  detail: 23 (18), 7691
+  url: https://www.mdpi.com/1424-8220/23/18/7691
+  note: featured as the front cover
+- num: 15
+  title: 'Inverse Lansing effect: maternal age and provisioning affecting daughters’ longevity and male offspring production'
+  authors: C. E. Anderson, M. C. Malek, R. A. Jonas-Closs, Y. Cho, L. Peshkin, M. W. Kirschner, and L. Y. Yampolsky
+  venue: American Naturalist
+  year: 2022
+  detail: 200 (5), 704-721
+  url: https://www.journals.uchicago.edu/doi/10.1086/721148
+- num: 14
+  title: Rapamycin treatment during development extends lifespan and healthspan of male mice and Daphnia manga
+  authors: A. V. Shindyapina, Y. Cho, A. Kaya, A. Tyshkovskiy, J.P. Castro, A. Deik, J. Gordevicius, J. R. Poganik, C. B. Clish, S. Horvath, L. Peshkin, V. N. Gladyshev
+  venue: Science Advances
+  year: 2022
+  detail: 8 (37), eabo5482
+  url: https://www.science.org/doi/10.1126/sciadv.abo5482
+- num: 13
+  title: Intelligent high-throughput intervention testing platform in Daphnia
+  authors: Y.Cho, R. A. Jonas-Closs, Lev. Y. Yampolsky, M. W. Kirschner, and L. Peshkin
+  venue: Aging Cell
+  year: 2022
+  detail: . 21 (3), e13571
+  url: https://onlinelibrary.wiley.com/doi/full/10.1111/acel.13571
+- num: 12
+  title: Lack of Age-related Respiratory Changes in Daphnia
+  authors: C. E. Anderson, M. N. Ekwudo, R. A. Jonas-Closs, Y. Cho, L. M. Peshkin, M. W. Kirschner, and L. Y. Yampolsky
+  venue: Biogerontology
+  year: 2022
+  detail: 23 (1), 85-97
+  url: https://link.springer.com/article/10.1007/s10522-021-09947-6
+- num: 11
+  title: Development of a novel fluorescent biosensor for dynamic monitoring of metabolic methionine redox status in cells and tissues
+  authors: D. W. Choi, Y. J. Roh, S. Kim, H. M. Lee, M. Kim, D. Shin, J. H. Park, Y. Cho, H. H. Park, Y. S. Ok, D. Kang, J. H. Kim, L. Tarrago, N. N. Danial, V. N. Gladyshev, P. K. Min, B. C. Lee
+  venue: Biosensors and Bioelectronics
+  year: 2021
+  detail: 178, 113031
+  url: https://www.sciencedirect.com/science/article/pii/S0956566321000671
+- num: 10
+  title: An automated platform to monitor long-term behavior and healthspan in C. elegans under precise environmental control
+  authors: K. N. Le*, M. Zhan*, Y. Cho*, J. Wan, D. S. Patel, and H. Lu (*Equal contribution)
+  venue: Communications Biology
+  year: 2020
+  detail: 3 (1), 297
+  url: https://www.nature.com/articles/s42003-020-1013-2
+- num: 9
+  title: Multimodal Stimulation in a Microfluidic Device Facilitates Studies of Interneurons in Sensory Integration in C. elegans
+  authors: Y. Cho*, S. A. Lee*, Y. L. Chew, K. Broderick, W. R. Schafer, and H. Lu (*Equal contribution)
+  venue: Small
+  year: 2020
+  detail: 16 (10), 1905852
+  url: https://onlinelibrary.wiley.com/doi/full/10.1002/smll.201905852
+  note: featured as the front cover
+  cover: /images/publications/cover-9.jpg
+- num: 8
+  title: An Afferent Neuropeptide System Transmits Mechanosensory Signals Triggering Sensitization and Arousal in C. elegans
+  authors: Y. L. Chew, Y. Tanizawa, Y. Cho, B. Zhao, A. J. Yu, S. Ahn, C. Rankin, Y. J. You, H. Lu, I. Beets, and W. R. Schafer
+  venue: Neuron
+  year: 2018
+  detail: 99 (6), 1233-1246. e6
+  url: https://www.sciencedirect.com/science/article/pii/S0896627318306767
+- num: 7
+  title: On-chip functional neuroimaging to mechanical stimulation in Caenorhabditis elegans larvae for studying functional role of neural circuits
+  authors: Y. Cho, D. N. Oakland, S. A. Lee, W. R. Schafer, and H. Lu
+  venue: Lab on a chip
+  year: 2018
+  detail: 18, 601-609
+  url: https://pubs.rsc.org/en/content/articlelanding/2018/lc/c7lc01201b
+- num: 6
+  title: A programmable platform for sub-second multichemical dynamic stimulation and neuronal functional imaging in C. elegans
+  authors: T. Rouse, G. Aubry, Y. Cho, M. Zimmer and H. Lu
+  venue: Lab on a chip
+  year: 2018
+  detail: 18, 505-513
+  url: https://pubs.rsc.org/en/content/articlelanding/2018/lc/c7lc01116d/unauth
+- num: 5
+  title: Automated and controlled mechanical stimulation and functional imaging in vivo in C. elegans
+  authors: Y. Cho*, D. A. Porto*, H. Hwang, L. J. Grundy, W. R. Schafer, and H. Lu (*Equal contribution)
+  venue: Lab on a chip
+  year: 2017
+  detail: 17, 2609-2618
+  url: https://pubs.rsc.org/en/content/articlelanding/2017/lc/c7lc00465f
+- num: 4
+  title: Trends in High-throughput and Functional Neuroimaging in C. elegans
+  authors: Y. Cho, C. Zhao, and H. Lu
+  venue: Wiley Interdisciplinary Reviews - Systems Biology and Medicine
+  year: 2017
+  detail: e01376
+  url: https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wsbm.1376
+- num: 3
+  title: An Insulin-to-Insulin Regulatory Network Orchestrates Phenotypic Specificity in Development and Physiology
+  authors: D. A. F. de Abreu, A. Caballero, P. Fardel, N. Stroustrup, Z. Chen, K. Lee, W. D. Keyes, Z. M. Nash, I. F. Lo´ pez-Moyado, F. Vaggi, A. Cornils, M. Regenass, A. Neagu, I. Ostojic, C. Liu, Y. Cho, D. Sifoglu, Y. Shen, W. Fontana, H. Lu, A. Csikasz-Nagy, C. T. Murphy, A. Antebi, E. Blanc, J. Apfeld, Y. Zhang, J. Alcedo, Q. Ch’ng
+  venue: PLOS Genetics
+  year: 2014
+  detail: 10(3), e1004225
+  url: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004225
+- num: 2
+  title: pH-Responsive Assembly of Gold Nanoparticles and “Spatiotemporally Concerted” Drug Release for Synergistic Cancer Therapy
+  authors: J. Nam, W. La, S. Hwang, Y. S. Ha, N. Park, N. Won, S. Jung, S. H. Bhang, Y. Ma, Y. Cho, M. Jin, J. Han, J. Shin, E. KyungWang, S. G. Kim, S. Cho, J. Yoo, B. Kim, S. Kim
+  venue: ACS Nano
+  year: 2013
+  detail: 7 (4), 3388 – 3402
+  url: https://pubs.acs.org/doi/10.1021/nn400223a
+- num: 1
+  title: Comparison between heparin-conjugated fibrin and collagen sponge as bone morphogenetic protein-2 carrier for bone regeneration
+  authors: H. S. Yang*, W. La*, Y. Cho, W. Shin, G. Yeo, B. Kim (*Equal contribution)
+  venue: Experimental and Molecular Medicine
+  year: 2012
+  detail: 44, 350-355
+  url: https://www.nature.com/articles/emm201239

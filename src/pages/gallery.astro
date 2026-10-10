@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import gallery from '../data/gallery.yaml';
+---
+<Base title="Gallery" description="Photos from conferences and lab events.">
+  <div class="container page">
+    <div class="page-head"><h1>Gallery</h1></div>
+    <div class="gallery">
+      {gallery.map((g) => (
+        <figure>
+          <a href={g.photo} target="_blank" rel="noopener"><img src={g.photo} alt={g.title} loading="lazy" /></a>
+          <figcaption>{g.title}{g.link && <> · <a href={g.link} target="_blank" rel="noopener">link ↗</a></>}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</Base>

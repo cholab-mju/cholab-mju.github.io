@@ -1,0 +1,22 @@
+# 갤러리. 맨 위가 가장 먼저 표시됩니다. photo는 public/images/gallery/ 아래 경로.
+- title: 2026 한국 생물공학회 - 제주도 (Fall)
+  photo: /images/gallery/01.jpg
+- title: 2026 한국 생물공학회 - 여수 (Spring)
+  photo: /images/gallery/02.jpg
+- title: 2025 한국 생물공학회 (Fall)
+  photo: /images/gallery/03.jpg
+- title: 2025 겨울 랩회식
+  photo: /images/gallery/04.jpg
+- title: 제 31회 한국예쁜꼬마선충 학회 (2025) 2024년도 노벨생리의학상 수상자인 Victor Ambros 교수님과 함께
+  photo: /images/gallery/05.jpg
+  link: https://www.nobelprize.org/prizes/medicine/2024/press-release/
+- title: 제30회 한국예쁜꼬마선충학회 (2024. Jan)
+  photo: /images/gallery/06.jpg
+- title: 2024 한국 생물공학회 (Fall)
+  photo: /images/gallery/07.jpg
+- title: 2023 Spring Happy Hour
+  photo: /images/gallery/08.jpg
+- title: 2023 Summer BBQ Party
+  photo: /images/gallery/09.jpg
+- title: 2023 한국화학공학회 (Fall)
+  photo: /images/gallery/10.jpg

@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.yaml';
+import news from '../data/news.yaml';
+import gallery from '../data/gallery.yaml';
+import { formatDate } from '../lib/format';
+const latest = [...news].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 5);
+const recentPhotos = gallery.slice(0, 3);
+---
+<Base>
+  <section class="hero">
+    <img class="bg" src="/images/home/hero.jpg" alt="" fetchpriority="high" />
+    <div class="container">
+      <h1>{site.name}</h1>
+      <p class="ko">{site.name_ko} · {site.university_ko} {site.department_ko}</p>
+      <p class="lead">{site.tagline}</p>
+      <div class="actions">
+        <a class="btn" href="/research">Our research</a>
+        <a class="btn ghost" href="/publications">Publications</a>
+        <a class="btn ghost" href="/team/lab-members">Members</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container feature">
+      <div>
+        <h2>Join us</h2>
+        <p>{site.recruiting}</p>
+        <p class="muted">Contact: <a href={`mailto:${site.email}`}>{site.email}</a></p>
+        <p><a class="btn ghost" href={site.intro_doc} target="_blank" rel="noopener">연구실 소개글 보기 🧪</a></p>
+      </div>
+      <div>
+        <h2>Latest news</h2>
+        <ul class="news-brief">
+          {latest.map((n) => (
+            <li><time datetime={n.date}>{formatDate(n.date)}</time><span>{n.title}</span></li>
+          ))}
+        </ul>
+        <p style="margin-top:12px"><a href="/news">All news →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>Gallery</h2><a href="/gallery">See all →</a></div>
+      <div class="gallery">
+        {recentPhotos.map((g) => (
+          <figure><img src={g.photo} alt={g.title} loading="lazy" /><figcaption>{g.title}</figcaption></figure>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

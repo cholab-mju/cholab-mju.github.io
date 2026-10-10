@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import MemberCard from '../../components/MemberCard.astro';
+import data from '../../data/members.yaml';
+const alumni = [...data.alumni].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+---
+<Base title="Lab Members" description="Current members and alumni of the Intelligent BioMicrosystems Laboratory.">
+  <div class="container page">
+    <div class="page-head"><h1>Lab Members</h1></div>
+    {data.groups.map((g) => (
+      <section style="margin-bottom:40px">
+        <h2>{g.title}</h2>
+        <div class="grid cols-4">
+          {g.members.map((m) => <MemberCard m={m} />)}
+        </div>
+      </section>
+    ))}
+    <section>
+      <h2>Alumni</h2>
+      <ul class="alumni-list" style="list-style:none;padding:0;margin:0">
+        {alumni.map((a) => (
+          <li>
+            {a.photo ? <img src={a.photo} alt={a.name} loading="lazy" /> : <span class="ph" />}
+            <span><strong>{a.name}</strong> <span class="muted">({a.name_ko})</span><br /><span class="muted small">{a.role}{a.year && ` · ${a.year}`}</span></span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Base>

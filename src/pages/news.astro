@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import NewsItem from '../components/NewsItem.astro';
+import news from '../data/news.yaml';
+const sorted = [...news].sort((a, b) => (a.date < b.date ? 1 : -1));
+---
+<Base title="News" description="News and announcements from the Intelligent BioMicrosystems Laboratory.">
+  <div class="container page">
+    <div class="page-head"><h1>News</h1></div>
+    <div class="news-list">
+      {sorted.map((n) => <NewsItem n={n} />)}
+    </div>
+  </div>
+</Base>

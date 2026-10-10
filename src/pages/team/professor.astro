@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import prof from '../../data/professor.yaml';
+import site from '../../data/site.yaml';
+---
+<Base title="Professor" description={`${prof.name} (${prof.name_ko}), ${prof.title}, ${site.department}, ${site.university}`}>
+  <div class="container page">
+    <div class="page-head"><h1>Professor</h1></div>
+    <div class="profile">
+      <img src={prof.photo} alt={prof.name} width="480" height="633" />
+      <div>
+        <h2 style="margin-bottom:.1em">{prof.name} <span class="muted" style="font-weight:500">({prof.name_ko})</span></h2>
+        <p class="muted" style="margin-bottom:1.2em">{prof.title}, {site.department}, {site.university}</p>
+        <dl>
+          <dt>E-mail</dt><dd><a href={`mailto:${prof.email}`}>{prof.email}</a></dd>
+          <dt>Tel</dt><dd>{prof.tel}</dd>
+          <dt>Scholar</dt><dd><a href={prof.scholar} target="_blank" rel="noopener">Google Scholar ↗</a></dd>
+        </dl>
+
+        <h3 style="margin-top:2em">Professional experience</h3>
+        <ul class="timeline">
+          {prof.experience.map((e) => (
+            <li><span class="period">{e.period}</span><span><strong>{e.role}</strong><br />{e.url ? <a href={e.url} target="_blank" rel="noopener">{e.where}</a> : e.where}</span></li>
+          ))}
+        </ul>
+
+        <h3 style="margin-top:2em">Education</h3>
+        <ul class="timeline">
+          {prof.education.map((e) => (
+            <li><span class="period">{e.period}</span><span><strong>{e.degree}</strong><br />{e.url ? <a href={e.url} target="_blank" rel="noopener">{e.where}</a> : e.where}{e.note && <><br /><span class="muted small">{e.note}</span></>}</span></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</Base>
