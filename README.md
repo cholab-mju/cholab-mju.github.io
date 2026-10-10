@@ -21,6 +21,8 @@ GitHub Actions가 자동으로 빌드해 GitHub Pages에 배포합니다.
 | `src/data/site.yaml` | 연구실 이름, 주소, 연락처, 메뉴 |
 | `src/content/research.md` | Research 페이지 본문 (Markdown) |
 
+논문 PDF 버튼: `publications.yaml`의 `pdf`에 오픈액세스 PDF 주소를 적습니다. 비공개 논문은 출판사 정책이 허용하는 저자 원고(accepted manuscript)만 `public/pdf/`에 올리고 `pdf: /pdf/파일명.pdf`, `pdf_label: PDF (author manuscript)` 처럼 적습니다.
+
 사진은 `public/images/` 아래 폴더에 넣고 YAML에서 `/images/...` 경로로 참조합니다.
 긴 변 1600px 이하, 300KB 안팎의 JPEG를 권장합니다 (원본은 Google Drive에 보관).
 

@@ -127,14 +127,20 @@ p { margin: 0 0 1em; }
 .year-head { margin: 28px 0 4px; font-size: 1rem; color: var(--fg-muted); font-weight: 600; letter-spacing: .04em; }
 
 /* publication insight */
-.insight { margin-top: 8px; }
+.pub-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+.insight { display: contents; }
+.insight > summary { order: 0; }
+.pdf-btn { order: 1; display: inline-flex; align-items: center; gap: 6px; font-size: .82rem; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 4px 11px; border-radius: 999px; }
+.pdf-btn::before { content: "📄"; font-size: .85em; }
+.pdf-btn:hover { text-decoration: none; filter: brightness(.96); }
+.insight-body { order: 2; flex: 1 1 100%; }
 .insight > summary { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; font-size: .82rem; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 4px 11px; border-radius: 999px; user-select: none; }
 .insight > summary::-webkit-details-marker { display: none; }
 .insight > summary::before { content: "💡"; font-size: .85em; }
 .insight > summary::after { content: "▾"; font-size: .9em; transition: transform .15s; }
 .insight[open] > summary::after { transform: rotate(180deg); }
 .insight > summary:hover { filter: brightness(.96); }
-.insight-body { display: grid; gap: 16px; margin-top: 10px; padding: 14px 16px; background: var(--bg-soft); border-radius: var(--radius); border: 1px solid var(--line); }
+.insight-body { display: grid; gap: 16px; margin-top: 2px; padding: 14px 16px; background: var(--bg-soft); border-radius: var(--radius); border: 1px solid var(--line); }
 @media (min-width: 860px) { .insight-body { grid-template-columns: 1fr 1fr; gap: 24px; } }
 .insight-lang .tag { margin-bottom: 6px; }
 .insight-lang p { font-size: .92rem; line-height: 1.7; margin: 0 0 .6em; }
