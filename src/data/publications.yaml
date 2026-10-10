@@ -1,11 +1,25 @@
 # 논문 목록. num이 큰 순서(최신)로 표시됩니다. 새 논문은 num을 하나 올려 맨 위에 추가하세요.
+- num: 23
+  title: Oleic Acid-Mediated Double Emulsification Enables Enhanced Aqueous Stability and Localized Photothermal Heating of Liquid Metal Droplets
+  authors: Eunju Na, Youngwon Kim, Jihye Kim, Sang Kug Chung, Yongmin Cho, Bongseop Kwak, Joohyung Lee
+  venue: Small Methods
+  year: 2026
+  detail: 10(19), e71023
+  url: https://doi.org/10.1002/smtd.71023
+- num: 22
+  title: A Caenorhabditis elegans-based whole-organism microfluidic biosensing platform for detecting lung cancer cell-derived volatile organic compounds
+  authors: Nari Jang, Seung Hwan Lee, Yongmin Cho, Shin Sik Choi
+  venue: Biotechnology and Bioprocess Engineering
+  year: 2026
+  detail: 31(5), 867-876
+  url: https://doi.org/10.1007/s12257-026-00309-y
 - num: 21
   title: 'Light-On and Power-On: A Dual Mode Active De-/Anti-Icing System Using Liquid Metal-Based Photothermal and Electrothermal Pastes'
   authors: Chimin Song, Soonchul Kwon, Jungmin Lee, Yongmin Cho, Joohyung Lee
   venue: J. Mater. Chem. A
   year: 2026
-  url: https://pubs.rsc.org/en/content/articlehtml/2026/ta/d5ta10376b
-  verify: Google Sites의 서지 정보가 19번과 동일하게 적혀 있었음. 권/호/페이지 확인 필요.
+  detail: 14(22), 13363-13375
+  url: https://doi.org/10.1039/d5ta10376b
 - num: 20
   title: Efficient cell lysis and PCR platform with induction heating for C. elegans gene analysis
   authors: Seaan Hong, Jungyoon Uh, Minsu Kang, Taejin Kim, Youngeun Kwon, Yongmin Cho†, Hyun Ho Lee†
