@@ -15,7 +15,7 @@ GitHub Actions가 자동으로 빌드해 GitHub Pages에 배포합니다.
 | `src/data/news.yaml` | 뉴스/공지 (최신 항목을 맨 위에 추가) |
 | `src/data/gallery.yaml` | 갤러리 사진과 캡션 |
 | `src/data/members.yaml` | 현재 구성원과 졸업생 |
-| `src/data/publications.yaml` | 논문 목록 (num이 큰 순서로 표시) |
+| `src/data/publications.yaml` | 논문 목록 (num이 큰 순서로 표시). 각 항목의 `insight.ko/en`에 요약(summary)·의의(importance)를 적으면 Insight 패널이 생깁니다 |
 | `src/data/professor.yaml` | 교수 소개 |
 | `src/data/codes.yaml` | 공개 코드/데이터 |
 | `src/data/site.yaml` | 연구실 이름, 주소, 연락처, 메뉴 |

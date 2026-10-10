@@ -24,6 +24,15 @@ const years = [...new Set(sorted.map((p) => p.year))];
                 <div class="venue"><em>{p.venue}</em>, {p.year}{p.detail && `, ${p.detail}`}</div>
                 {p.note && <div class="note">★ {p.note}</div>}
                 {p.cover && <img class="cover" src={p.cover} alt={`${p.venue} cover`} loading="lazy" />}
+                {p.insight && (
+                  <details class="insight">
+                    <summary>Insight</summary>
+                    <div class="insight-body">
+                      {p.insight.ko && <div class="insight-lang" lang="ko"><span class="tag">KO</span><p>{p.insight.ko.summary}</p><p>{p.insight.ko.importance}</p></div>}
+                      {p.insight.en && <div class="insight-lang" lang="en"><span class="tag">EN</span><p>{p.insight.en.summary}</p><p>{p.insight.en.importance}</p></div>}
+                    </div>
+                  </details>
+                )}
               </div>
             </li>
           ))}
